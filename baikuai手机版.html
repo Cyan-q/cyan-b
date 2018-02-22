@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=320px, initial-scale=1"><!--宽度等于设备宽度，不要放大-->
+    <title>Title</title>
+    <script src="js/jquery-1.11.3.min.js"></script>
+</head>
+<style>*{margin:0;padding:0}
+.box{width:320px;height:470px;background:rgba(12,122,222,0.2);position: absolute;left:50%;top:50%;transform: translate(-50%,-50%);overflow: hidden}
+.hang{width:320px;height:150px;position: relative;top:-11160px;z-index:2;margin-top: 5px}
+.h{width:320px;height:150px;position: relative;top:-11160px;z-index:2;margin-top: 5px}
+.hang button{width:100px;height:150px;position: relative;background:white;margin: 0 3px;;float:left;border-color:beige;z-index:3;cursor: pointer}
+.h button{width:100px;height:150px;position: relative;background:deepskyblue;margin:0 3px;float:left;border-color:beige;z-index:3;cursor: pointer}
+.re{width:120px;height:100px;font-size: 25px;float: left;position: absolute;left:100px;top:190px;z-index:5;border-radius: 50px}
+.ks{width:120px;height:100px;font-size: 25px;float: left;position: absolute;left:100px;top:190px;z-index:5;border-radius: 10px;text-shadow: 5px 5px grey ;font-weight: 800}
+.ok{border-radius: 10px;width:200px;height:100px;font-size: 25px;float: left;position: absolute;left:60px;top:190px;z-index:6;display: none;}
+.ok2{border-radius: 10px;width:200px;height:100px;font-size: 25px;float: left;position: absolute;left:60px;top:190px;z-index:6;display: none;}
+p{width:60px;margin: 0 auto;border: 1px solid aliceblue;border-radius: 15px;background: bisque;box-shadow: 0 0 10px grey}
+a{text-decoration: none;color: black}
+.tm{width:320px;height:480px;position: absolute;top:0;left:0;z-index:4;display: none;}
+.tm1{width:320px;height:480px;position: absolute;top:0;left:0;z-index:4}
+.dang{width:320px;height:320px;position: absolute;top:0;left:0;z-index:3}
+.time{text-align: center;width:160px;height:60px;position: relative;top:0;right:0;z-index:4;font-size: 45px;display: inline-block}
+.kuai{text-align: center;width:160px;height:40px;position: relative;top:5px;right:0;z-index:4;font-size: 25px;display: inline-block}
+.bbb{width:160px;height:100px;position: absolute;top:30px;right:36px;border-radius: 15px;border: 1px solid;z-index:5;display: none;text-align: center;background:rgba(128,255,225,0.2)}
+
+</style>
+<body>
+<div class="box">
+    <button class="ok">Congratulation!<p>确定</p></button>
+    <button class="ok2">Game Over!<p>确定</p></button>
+    <div class="tm1"><button class="ks">点击开始</button></div>
+    <div class="tm"><button class="re"><a href="">重新开始</a></button></div>
+    <div class="bbb">
+        <span class="time">15</span>
+        <span class="kuai">0块</span>
+    </div>
+
+    <div class="dang"></div>
+    <div class="h">
+        <button></button>
+        <button></button>
+        <button></button>
+    </div>
+    <div class="h">
+        <button></button>
+        <button></button>
+        <button></button>
+    </div>
+    <div class="h">
+        <button></button>
+        <button></button>
+        <button></button>
+    </div>
+
+
+    <div class="hang">
+        <button></button>
+        <button></button>
+        <button></button>
+    </div>
+    <div class="hang">
+        <button></button>
+        <button></button>
+        <button></button>
+    </div>
+    <div class="hang">
+        <button></button>
+        <button></button>
+        <button></button>
+    </div>
+
+    <div class="hang">
+        <button></button>
+        <button></button>
+        <button></button>
+    </div>
+    <div class="hang">
+        <button></button>
+        <button></button>
+        <button></button>
+    </div>
+    <div class="hang">
+        <button></button>
+        <button></button>
+        <button></button>
+    </div>
+
+    <div class="hang">
+        <button></button>
+        <button></button>
+        <button></button>
+    </div>
+    <div class="hang">
+        <button></button>
+        <button></button>
+        <button></button>
+    </div>
+    <div class="hang">
+        <button></button>
+        <button></button>
+        <button></button>
+    </div>
+
+    <div class="hang">
+        <button></button>
+        <button></button>
+        <button></button>
+    </div>
+    <div class="hang">
+        <button></button>
+        <button></button>
+        <button></button>
+    </div>
+    <div class="hang">
+        <button></button>
+        <button></button>
+        <button></button>
+    </div>
+
+    <div class="hang">
+        <button></button>
+        <button></button>
+        <button></button>
+    </div>
+    <div class="hang">
+        <button></button>
+        <button></button>
+        <button></button>
+    </div>
+    <div class="hang">
+        <button></button>
+        <button></button>
+        <button></button>
+    </div>
+
+    <div class="hang">
+        <button></button>
+        <button></button>
+        <button></button>
+    </div>
+    <div class="hang">
+        <button></button>
+        <button></button>
+        <button></button>
+    </div>
+    <div class="hang">
+        <button></button>
+        <button></button>
+        <button></button>
+    </div>
+
+    <div class="hang">
+        <button></button>
+        <button></button>
+        <button></button>
+    </div>
+    <div class="hang">
+        <button></button>
+        <button></button>
+        <button></button>
+    </div>
+    <div class="hang">
+        <button></button>
+        <button></button>
+        <button></button>
+    </div>
+
+    <div class="hang">
+        <button></button>
+        <button></button>
+        <button></button>
+    </div>
+    <div class="hang">
+        <button></button>
+        <button></button>
+        <button></button>
+    </div>
+    <div class="hang">
+        <button></button>
+        <button></button>
+        <button></button>
+    </div>
+
+    <div class="hang">
+        <button></button>
+        <button></button>
+        <button></button>
+    </div>
+    <div class="hang">
+        <button></button>
+        <button></button>
+        <button></button>
+    </div>
+    <div class="hang">
+        <button></button>
+        <button></button>
+        <button></button>
+    </div>
+
+    <div class="hang">
+        <button></button>
+        <button></button>
+        <button></button>
+    </div>
+    <div class="hang">
+        <button></button>
+        <button></button>
+        <button></button>
+    </div>
+    <div class="hang">
+        <button></button>
+        <button></button>
+        <button></button>
+    </div>
+
+    <div class="hang">
+        <button></button>
+        <button></button>
+        <button></button>
+    </div>
+    <div class="hang">
+        <button></button>
+        <button></button>
+        <button></button>
+    </div>
+    <div class="hang">
+        <button></button>
+        <button></button>
+        <button></button>
+    </div>
+
+    <div class="hang">
+        <button></button>
+        <button></button>
+        <button></button>
+    </div>
+    <div class="hang">
+        <button></button>
+        <button></button>
+        <button></button>
+    </div>
+    <div class="hang">
+        <button></button>
+        <button></button>
+        <button></button>
+    </div>
+
+    <div class="hang">
+        <button></button>
+        <button></button>
+        <button></button>
+    </div>
+    <div class="hang">
+        <button></button>
+        <button></button>
+        <button></button>
+    </div>
+    <div class="hang">
+        <button></button>
+        <button></button>
+        <button></button>
+    </div>
+
+    <div class="hang">
+        <button></button>
+        <button></button>
+        <button></button>
+    </div>
+    <div class="hang">
+        <button></button>
+        <button></button>
+        <button></button>
+    </div>
+    <div class="hang">
+        <button></button>
+        <button></button>
+        <button></button>
+    </div>
+
+    <div class="hang">
+        <button></button>
+        <button></button>
+        <button></button>
+    </div>
+    <div class="hang">
+        <button></button>
+        <button></button>
+        <button></button>
+    </div>
+    <div class="hang">
+        <button></button>
+        <button></button>
+        <button></button>
+    </div>
+
+    <div class="hang">
+        <button></button>
+        <button></button>
+        <button></button>
+    </div>
+    <div class="hang">
+        <button></button>
+        <button></button>
+        <button></button>
+    </div>
+    <div class="hang">
+        <button></button>
+        <button></button>
+        <button></button>
+    </div>
+
+    <div class="hang">
+        <button></button>
+        <button></button>
+        <button></button>
+    </div>
+    <div class="hang">
+        <button></button>
+        <button></button>
+        <button></button>
+    </div>
+    <div class="hang">
+        <button></button>
+        <button></button>
+        <button></button>
+    </div>
+
+    <div class="hang">
+        <button></button>
+        <button></button>
+        <button></button>
+    </div>
+    <div class="hang">
+        <button></button>
+        <button></button>
+        <button></button>
+    </div>
+    <div class="hang">
+        <button></button>
+        <button></button>
+        <button></button>
+    </div>
+
+    <div class="hang">
+        <button></button>
+        <button></button>
+        <button></button>
+    </div>
+    <div class="hang">
+        <button></button>
+        <button></button>
+        <button></button>
+    </div>
+    <div class="hang">
+        <button></button>
+        <button></button>
+        <button></button>
+    </div>
+
+    <div class="hang">
+        <button></button>
+        <button></button>
+        <button></button>
+    </div>
+    <div class="hang">
+        <button></button>
+        <button></button>
+        <button></button>
+    </div>
+    <div class="hang">
+        <button></button>
+        <button></button>
+        <button></button>
+    </div>
+
+    <div class="hang">
+        <button></button>
+        <button></button>
+        <button></button>
+    </div>
+    <div class="hang">
+        <button></button>
+        <button></button>
+        <button></button>
+    </div>
+    <div class="hang">
+        <button></button>
+        <button></button>
+        <button></button>
+    </div>
+
+    <div class="hang">
+        <button></button>
+        <button></button>
+        <button></button>
+    </div>
+    <div class="hang">
+        <button></button>
+        <button></button>
+        <button></button>
+    </div>
+    <div class="hang">
+        <button></button>
+        <button></button>
+        <button></button>
+    </div>
+
+    <div class="hang">
+        <button></button>
+        <button></button>
+        <button></button>
+    </div>
+    <div class="hang">
+        <button></button>
+        <button></button>
+        <button></button>
+    </div>
+    <div class="hang">
+        <button></button>
+        <button></button>
+        <button></button>
+    </div>
+
+    <div class="hang">
+        <button></button>
+        <button></button>
+        <button></button>
+    </div>
+    <div class="hang">
+        <button></button>
+        <button></button>
+        <button></button>
+    </div>
+    <div class="hang">
+        <button></button>
+        <button></button>
+        <button></button>
+    </div>
+
+</div>
+<script>
+    var id;
+    var tim;
+    $('.ks').on('click',function () {
+        $('.tm1').css({display:"none"});
+        $('.bbb').css({display:"block"});
+        var cha=15000;
+        id=window.setInterval(function () {
+            cha=cha-4;
+            var seconds = parseInt(cha/1000%60);
+            var milliseconds=(cha%1000);
+            $('.time').html(seconds+"."+milliseconds);
+            if(cha<=0){
+                cha=0;
+                window.clearInterval(id);
+                $(".ok2,.tm").css({display:"block"});
+            }
+        },1);
+    });
+    var i=0;
+    $('.hang').each(function (index) {
+        var a=Math.floor(Math.random()*10)%3;
+        $('.hang').eq(index).children("button").eq(a).css({background:"darkviolet"});
+        $('.hang').eq(index).children("button").on("click",function () {
+            if($(this).index()==a){
+                $(".hang,.h").finish();
+                var b=parseInt($(".hang").css("top"));
+                i=i+1;
+                $(this).css({background:"blue"});
+                b=b+155;
+                $(".hang").animate({top:b+"px"},"fast");
+                $(".h").animate({top:b+"px"},"fast") ;
+                $('.kuai').html(i+"块");
+                if(parseInt($(".hang").css("top"))>=-200){
+                    window.clearInterval(id);
+                    $(".hang").css({top:"-180px"},"fast");
+                    $(".h").css({top:"-180px"},"fast") ;
+                    $(".tm").css({display:"block"});
+                    $(".ok").css({display:"block"});
+                }else{
+                }
+            }else{
+                window.clearInterval(id);
+                $(this).css({background:"red"});
+                $(".ok2").css({display:"block"});
+                $(".tm").css({display:"block"});
+                $('.bbb').animate({left:"74px",top:"50px"});
+                $('.bbb').css({background:"red"});
+            }
+        });
+
+    });
+    $('.ok,.ok2').on('click',function () {
+        $('.ok,.ok2').css({display:"none"})
+    });
+</script>
+</body>
+</html>
